@@ -68,14 +68,19 @@
           <img src="./assets/images/work001-01.jpg" class="img-responsive" alt="">
           <div class="card-container">
             <div class="text-center">
-              <h1 class="h2">001 : Fringilla sit amet</h1>
+              <h1 class="h2">How Javascript Works?Inside Workings of JS.</h1>
+              <p class="">A guide for the Ignorant Programmers.</p>
             </div>
-            <p>Nulla facilisi. Vivamus vestibulum, elit in scelerisque ultricies, nisl nunc pulvinar ligula, id sodales
-              arcu sapien in nisi. Quisque libero enim, mattis non augue posuere, venenatis dapibus urna.</p>
+
+
 
             <blockquote>
-              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."</p>
-              <small class="pull-right">Irina Martin</small>
+              <p>A programming language is like a natural, human language in that it favors certain metaphors, images,
+                and
+                ways
+                of thinking.</p>
+              <small class="pull-right">Mindstorms
+                (1980)</small>
             </blockquote>
           </div>
         </div>
@@ -84,15 +89,125 @@
 
         <div class="col-md-8 col-md-offset-2 section-container-spacer">
           <div class="row">
-            <div class="col-xs-12 col-md-6">
-              <img src="./assets/images/work001-02.jpg" class="img-responsive" alt="">
-              <p>Menphis skyline</p>
-            </div>
+
             <div class="col-xs-12 col-md-6">
               <img src="./assets/images/work001-03.jpg" class="img-responsive" alt="">
               <p>Menphis skyline</p>
             </div>
           </div>
+        </div>
+
+        <div class="section-container" style='margin: 10px;'>
+          <h2 class="h2">INTRODUCTION</h2>
+
+          <p>We define programming, as a general human activity, to mean the act of extending or changing
+            a
+            system’s
+            functionality. Programming is a widespread activity that is done both by nonspecialists (e.g., consumers who
+            change the settings of their alarm clock or cellular phone) and specialists (computer programmers, the
+            audience for this article).</p>
+          <h2 class="h2">
+            Javascript : The Language </h2>
+          <p>The most popular Programming language today.
+            Some of the most powerful Software are written in JavaScript today.
+            But how many folks do actually understand this language?
+            Probabily this the only language which is used(usually in scripts) before it is fully understood.
+            Javascript is a powerful programming language but Weird at the same time.
+            We can’t deny this fact but overall it is a beautiful Programming languange.</p>
+          <p> So,
+            Have you Ever Wondered,how do those assortments of programming statements tell the Computer what to do?</p>
+          <blockquote class="h3" style="color: grey;">Statements like a = a + 2 are helpful for developers when reading
+            and writing, but are
+            not
+            actually in a form
+            the computer can directly understand.</blockquote>
+          <p>So an uncommon utility on the Computer (either a interpreter or a compiler) is utilized to decipher the
+            code
+            you compose into directions that a Computer can comprehend!</p>
+          <p class="h3">For some computer languages, this translation of commands is typically done from top to bottom,
+            line by line,
+            every time the program is run, which is usually called interpreting the code.
+            For other languages, the translation is done ahead of time, called compiling the code, so when the program
+            runs later, what’s running is actually the already compiled computer instructions ready to go.</p>
+          It’s typically asserted that JavaScript is interpreted, because your JavaScript source code is processed each
+          time it’s run. But that’s not entirely accurate.
+          The JavaScript engine actually compiles the program on the fly and then immediately runs the compiled code.
+          In this article we will LEARN about some essential concepts that will help you to understand what actually
+          happens under the hood.
+          And by the endof the article you will have a clear understanding of what actually happens when you write a
+          Javascript. CODE
+          Concepts that we will learn here are :
+          Syntax Parsers
+          Execution Contexts
+          Lexical Enviroments
+          Understanding Syntax Parsers, Execution Contexts, and Lexical Environments in a Simple Language.
+          All three of these are complicated sounding terms that actually aren’t that difficult to understand.
+          SYNTAX PARSER :
+          A PROGRAM THAT READS YOUR CODE AND DETERMINES WHAT IT DOES AND IF IT’S GRAMMAR OR SYNTAX IS VALID
+          So when you write JavaScript it isn’t magically directly telling the computer what to do , you are abstracted
+          away from all of that you are writing code! but then someone else or other people built programs that convert
+          your JavaScript into something the computer can understand.
+          Was it too hard?
+          Those programs are called compilers and at times they also have to do with interpreters, but those programs
+          interpreters and compilers do the process the work of actually reading your code character by character and
+          determining if the syntax is valid and then implementing that syntax in a way the computer can understand,
+          so when you’re thinking about your code think of it more like :
+          Code that you have Written and Which is human Readable
+          and a program that is going to convert what computer can understand !
+          Something like this:
+
+          If you have a function with the variable,then that function and variable will be represented in memory but
+          it’s being translated from what you have written what is more human readable to what the computer can
+          understand. There’s a compiler or an interpreter between those two things and part of that is a syntax parser
+          so, it’s going through your code
+          character by character like f /u/ n/ c/ t/ i/ o/ n
+          That is, it reads your code in characters
+          She is explaining How Computers Reads Your Code 😉
+          and it says : Oh! that’s function😃 ,So there should be a space after this ! and then the next thing I see up
+          until the parenthesis ( ) will be the name of the function,
+          above Greet is next thing the computer sees up until the parenthesis ( ) so it assumes that Greet will be the
+          name of the function.
+          And all this gets translated by the systems that someone else wrote but that also means that in that
+          translation process ,the programmers who wrote the compiler can choose to do extra stuff .
+          Your code is not what’s actually being given to the computer but a translation of it and so along the way the
+          engine that is interpreting your code can decide to do other things those programmers could have chosen to do
+          something else and in fact that’s going to come up as an important element of understanding JavaScript so
+          that’s impacts parsers and thinking about the programs that are actually running every time you run your
+          JavaScript code that intermediate program that’s creating your code.
+          LEXICAL ENVIRONMENT :
+          The word lexical means having to do with words or grammar so we’re talking about the code you’re writing it’s
+          syntax it’s vocabulary !
+          Now a lexical environment exists in programming languages in which,where you write something which is
+          important.
+          It sounds kind of funny but actually not every programming language is that way, but remember we said you
+          might have some code .
+          let’s say a function with a variable inside of it the variable sits lexically inside the function ,that is :
+          physically the code that you’re writing
+
+          function with a variable inside of it.
+          that’s where it sits but remember we said that your code is not what’s actually given directly to the computer
+          but it’s translated into something the computer can understand
+          In programming languages where the lexical environment is important that means that where you see things
+          written gives you an idea of where it will actually sit in the computer’s memory of how it will interact with
+          other variables and functions and elements of the program and that’s because the program or the compiler
+          that’s converting your code to those instructions cares about where you put things it makes decisions that
+          syntax parts are going through everything makes decisions so when we talk about the lexical environment of
+          something in the code we’re talking about where it’s written and what surrounds it got that.
+          To help manage the code that is running there are lots of lexical environments areas of the code that you’re
+          looking at physically but which one is currently actually running is managed via what’s called
+          EXECUTION CONTEXT:
+          A WRAPPER TO HELP MANAGE THE CODE THAT IS RUNNING
+          There are lots of lexical environments which one i currently running id managed via execution contexts.it
+          contain things beyond what you have written in your code
+          And in execution context contains your code ,the running code and it’s running your code, but it also can
+          contain things beyond what you’ve written in your code because remember again your code is being translated
+          being processed by a whole other feature a whole other set of programs that someone else wrote and so it’s
+          executing your code and it can do other things as well and that’s what’s happening inside JavaScript.
+          Execution context is whole topic by itself which we will deal in some other article.
+          How was the Post ? Tell me in the comments.
+
+          Well then ,Share this with your Programming Buddies.
+
         </div>
 
         <div class="col-xs-12">
