@@ -69,7 +69,8 @@
 
 
             <blockquote>
-              <p>A programming language is like a natural, human language in that it favors certain metaphors, images,
+              <p class="h3">A programming language is like a natural, human language in that it favors certain
+                metaphors, images,
                 and
                 ways
                 of thinking.</p>
@@ -135,8 +136,8 @@
                   href="https://softwareengineering.stackexchange.com/questions/138521/is-javascript-interpreted-by-design"
                   target="_blank" rel="noopener nofollow"> But that’s not entirely
                   accurate.</a></h3>
-            <p>The JavaScript
-              engine actually compiles the program on the fly and then immediately runs the compiled code.</p>
+            " The JavaScript
+            engine actually compiles the program on the fly and then immediately runs the compiled code. "
           </blockquote>
           <p>In this article we will LEARN about some essential concepts that will help
             you
@@ -144,9 +145,9 @@
             understanding of what actually happens when you write a Javascript. CODE</p>
           <p>Concepts that we will learn here are :</p>
           <ul class="h3">
-            <li>Syntax Parsers</li>
-            <li>Execution Contexts</li>
-            <li>Lexical Enviroments</li>
+            <li>Syntax Parsers</li> <br>
+            <li>Execution Contexts</li> <br>
+            <li>Lexical Enviroments</li> <br>
           </ul>
           <p>Understanding Syntax Parsers, Execution Contexts, and Lexical Environments
             in
@@ -198,6 +199,7 @@
                 sizes="700px" role="presentation" /></noscript>
 
           </figure>
+          <br>
 
 
 
@@ -210,97 +212,97 @@
             interpreter between those two things and part of that is a syntax
             parser so, it’s going through your code</p>
 
-          <p>character by character like f /u/ n/ c/ t/ i/ o/
-            n</p> That is, it reads your code in characters
-          <p>and it says :
-            Oh!
-            that’s function😃 ,So there should be a space after this ! and then the next thing I see up until
-            the
-            parenthesis ( ) will be the name of the function,</p>
+          <p>character by character like f /u/ n/ c/ t/ i/ o /n <br>
+            That is, it reads your code in characters (one by one) <br>
+            <p>and it says :
+              Oh!
+              that’s a function 😃 <br> So, there should be a space after this ! and then the next thing I see up until
+              the
+              parenthesis ( ) will be the name of the function,</p>
 
-          <p>above Greet is next
-            thing
-            the computer sees up until the parenthesis ( ) so it assumes that Greet will be the
-            name of
-            the function.</p>
-          <p>And all this gets translated by the systems that someone
-            else
-            wrote but that also means that in that translation process ,the programmers who wrote the
-            compiler
-            can choose to do extra stuff .</p>
-          <p>Your code is not what’s actually being given to the computer but a
-            translation
-            of it and so along the way the engine that is interpreting your code can decide to do other things
-            those
-            programmers could have chosen to do something else and in fact that’s going to come up as an important
-            element of understanding JavaScript so that’s impacts parsers and thinking about the programs that are
-            actually running every time you run your JavaScript code that intermediate program that’s creating
-            your
-            code.</p>
-          <h3>Lexical Enviroments</h3>
-          <p>The word lexical means having to do with words or
-            grammar
-            so we’re talking about the code you’re writing it’s syntax it’s vocabulary !</p>
+            <p>above Greet is next
+              thing
+              the computer sees up until the parenthesis ( ) so it assumes that Greet will be the
+              name of
+              the function.</p>
+            <p>And all this gets translated by the systems that someone
+              else
+              wrote but that also means that in that translation process ,the programmers who wrote the
+              compiler
+              can choose to do extra stuff .</p>
+            <p>Your code is not what’s actually being given to the computer but a
+              translation
+              of it and so along the way the engine that is interpreting your code can decide to do other things
+              those
+              programmers could have chosen to do something else and in fact that’s going to come up as an important
+              element of understanding JavaScript so that’s impacts parsers and thinking about the programs that are
+              actually running every time you run your JavaScript code that intermediate program that’s creating
+              your
+              code.</p>
+            <h3>Lexical Enviroments</h3>
+            <p>The word lexical means having to do with words or
+              grammar
+              so we’re talking about the code you’re writing it’s syntax it’s vocabulary !</p>
 
-          <p>Now a lexical environment exists in
-            programming
-            languages in which,where you write something which is It sounds kind of funny but actually not every
-            programming language is
-            that
-            way, but remember we said you might have some code .</p>
-          <p>let’s say a function with a variable inside of it the variable sits
-            lexically
-            inside the function ,that is : physically the code that you’re writing</em></p>
+            <p>Now a lexical environment exists in
+              programming
+              languages in which,where you write something which is It sounds kind of funny but actually not every
+              programming language is
+              that
+              way, but remember we said you might have some code .</p>
+            <p>let’s say a function with a variable inside of it the variable sits
+              lexically
+              inside the function ,that is : physically the code that you’re writing</em></p>
 
-          <code style="font-size: larger;" ;">
-            <hr>
-            function greet() { <br>
-            let message = 'Hello you there Beatiful Human' ; <br>
-            } <br>
-            <hr>
-          </code>
+            <code style="font-size: larger;" ;">
+              <hr>
+              function greet() { <br>
+              let message = 'Hello you there Beatiful Human' ; <br>
+              } <br>
+              <hr>
+            </code>
 
 
 
-          <p>function with a
-            variable inside of it.that’s where it sits but remember we said that your code is not what’s
-            actually given directly to the computer but it’s translated into something the computer can understand
-          </p>
-          <p>In programming languages where the lexical
-            environment
-            is important that means that where you see things written gives you an idea of where it
-            will
-            actually sit in the computer’s memory of how it will interact with other variables
-            and functions and elements of the program and that’s because the program or the compiler
-            that’s
-            converting your code to those instructions cares about where you put things it makes decisions that
-            syntax
-            parts are going through everything makes decisions so when we talk about the lexical environment of
-            something in the code we’re talking about where it’s written and what surrounds it got that.</p>
-          <p>To help manage the code that is running there are lots of lexical
-            environments
-            areas of the code that you’re looking at physically but which one is currently actually running is
-            managed
-            via what’s called</p>
-          <h3>EXECUTION CONTEXT:</h3>
-          <h3>A WRAPPER TO HELP MANAGE THE CODE THAT IS
-            RUNNING
-          </h3>
+            <p>function with a
+              variable inside of it.that’s where it sits but remember we said that your code is not what’s
+              actually given directly to the computer but it’s translated into something the computer can understand
+            </p>
+            <p>In programming languages where the lexical
+              environment
+              is important that means that where you see things written gives you an idea of where it
+              will
+              actually sit in the computer’s memory of how it will interact with other variables
+              and functions and elements of the program and that’s because the program or the compiler
+              that’s
+              converting your code to those instructions cares about where you put things it makes decisions that
+              syntax
+              parts are going through everything makes decisions so when we talk about the lexical environment of
+              something in the code we’re talking about where it’s written and what surrounds it got that.</p>
+            <p>To help manage the code that is running there are lots of lexical
+              environments
+              areas of the code that you’re looking at physically but which one is currently actually running is
+              managed
+              via what’s called</p>
+            <h3>EXECUTION CONTEXT:</h3>
+            <h3>A WRAPPER TO HELP MANAGE THE CODE THAT IS
+              RUNNING
+            </h3>
 
-          <p>There are lots of lexical environments which one i currently running id
-            managed via execution contexts.it contain things beyond what you have written in your code</p>
+            <p>There are lots of lexical environments which one i currently running id
+              managed via execution contexts.it contain things beyond what you have written in your code</p>
 
-          <p>And in execution context contains your code ,the running code and it’s
-            running
-            your code, but it also can contain things beyond what you’ve written in your code because remember
-            again
-            your code is being translated being processed by a whole other feature a whole other set of programs
-            that
-            someone else wrote and so it’s executing your code and it can do other things as well and that’s
-            what’s
-            happening inside JavaScript.</p>
-          <p>Execution context is whole topic by itself
-            which we will deal in some other article.</p>
+            <p>And in execution context contains your code ,the running code and it’s
+              running
+              your code, but it also can contain things beyond what you’ve written in your code because remember
+              again
+              your code is being translated being processed by a whole other feature a whole other set of programs
+              that
+              someone else wrote and so it’s executing your code and it can do other things as well and that’s
+              what’s
+              happening inside JavaScript.</p>
+            <p>Execution context is whole topic by itself
+              which we will deal in some other article.</p>
 
 
         </div>
